@@ -3,16 +3,16 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Dashboard from "@material-ui/icons/Dashboard";
-import Schedule from "@material-ui/icons/Schedule";
-import List from "@material-ui/icons/List";
+import { ChildCare, BusinessCenter, RecordVoiceOver, FlightTakeoff, QuestionAnswer, LabelImportant, ShoppingCart } from "@material-ui/icons";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
+import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
+
 
 const useStyles = makeStyles(styles);
 
@@ -20,168 +20,95 @@ export default function SectionPills() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <div className={classes.container}>
-        <div id="navigation-pills">
-          <div className={classes.title}>
-            <h3>Navigation Pills</h3>
-          </div>
-          <div className={classes.title}>
-            <h3>
-              <small>With Icons</small>
-            </h3>
-          </div>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={8} lg={6}>
+          <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={8}>
               <NavPills
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
+                    tabButton: "For Beginners",
+                    tabIcon: LabelImportant,
                     tabContent: (
                       <span>
                         <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
+                        Basic conversation, grammar, vocabulary practice. Lessons for those just starting to learn!
                         </p>
                         <br />
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "For Kids",
+                    tabIcon: ChildCare,
+                    tabContent: (
+                      <span>
                         <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
+                        Alphabet, Let’s Go ... Popular English materials for kids
                         </p>
                         <br />
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "Business",
+                    tabIcon: BusinessCenter,
+                    tabContent: (
+                      <span>
                         <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
+                        Practice useful English for office workers
+                        </p>
+                        <br />
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "Speaking Test",
+                    tabIcon: RecordVoiceOver,
+                    tabContent: (
+                      <span>
+                        <p>
+                        Familiarize yourself with TOEIC Speaking, TOEFL Speaking test
+                        </p>
+                        <br />
+                      </span>
+                    )
+                  },
+                  {
+                    tabButton: "Travel & Culture",
+                    tabIcon: FlightTakeoff,
+                    tabContent: (
+                      <span>
+                        <p>
+                        Learn phrases you will need when traveling abroad
                         </p>
                       </span>
                     )
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
+                    tabButton: "Discussion",
+                    tabIcon: QuestionAnswer,
                     tabContent: (
                       <span>
                         <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
+                        High quality English lessons based on news articles - updated daily!
                         </p>
                         <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
-                      </span>
-                    )
-                  },
-                  {
-                    tabButton: "Tasks",
-                    tabIcon: List,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
                       </span>
                     )
                   }
                 ]}
               />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={6}>
-              <NavPills
-                color="rose"
-                horizontal={{
-                  tabsGrid: { xs: 12, sm: 4, md: 4 },
-                  contentGrid: { xs: 12, sm: 8, md: 8 }
-                }}
-                tabs={[
-                  {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                      </span>
-                    )
-                  },
-                  {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
-                      </span>
-                    )
-                  }
-                ]}
-              />
-            </GridItem>
+        </GridItem>
           </GridContainer>
-        </div>
+          <div>
+          <GridContainer justify="center">
+        <GridItem xs={12} sm={12} md={8}>
+          <h1 className={classes.title}>Get Started Today</h1>
+          <Button color="primary" round>
+                <ShoppingCart className={classes.icons} /> GET A FREE TRIAL
+              </Button>
+        </GridItem>
+      </GridContainer>
       </div>
     </div>
   );

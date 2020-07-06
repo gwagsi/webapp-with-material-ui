@@ -12,14 +12,14 @@ import Footer from "components/Footer/Footer.js";
 import Parallax from "components/Parallax/Parallax.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import ProductSection from "./Sections/ProductSection.js";
+
 
 
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionBasics from "./Sections/SectionBasics.js";
+import ProductSection from "./Sections/ProductSection.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
+import SectionPills from "./Sections/SectionPills.js";
 
 const useStyles = makeStyles(styles);
 
@@ -55,6 +55,7 @@ export default function Home(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
       <ProductSection />
+      <SectionPills/>
       </div>
       <Footer />
     </div>
