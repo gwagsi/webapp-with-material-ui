@@ -7,7 +7,10 @@
   "dependencies": {
     "@material-ui/core": "4.10.0",
     "@material-ui/icons": "4.9.1",
+    "@styled-icons/entypo": "^10.7.0",
+    "@styled-icons/entypo-social": "^10.7.0",
     "classnames": "2.2.6",
+    "firebase": "^7.15.5",
     "history": "4.10.1",
     "moment": "2.26.0",
     "node-sass": "4.14.1",
@@ -19,7 +22,8 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-slick": "0.26.1",
-    "react-swipeable-views": "0.13.9"
+    "react-swipeable-views": "0.13.9",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/cli": "7.10.1",

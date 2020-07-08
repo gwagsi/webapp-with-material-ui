@@ -14,6 +14,7 @@ import LoginPage from "views/LoginPage/LoginPage.js";
 import Home from "views/Home/home.js";
 import About from "views/About/about";
 import Contact from "views/Contact/contact";
+import HowTo from "views/HowTo/how-to.js"
 
 var hist = createBrowserHistory();
 
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/how-to" component={HowTo}/>
       <Route path="/" component={Components} />
 
     </Switch>

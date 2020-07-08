@@ -15,6 +15,8 @@ import Footer from "components/Footer/Footer.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
+import ProcessSection from "./Sections/ProcessSection.js";
+
 
 const useStyles = makeStyles(styles);
 
@@ -27,14 +29,18 @@ export default function HowTo(props) {
         brand="LEARNING PACK"
         rightLinks={<HeaderLinks />}
         fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
+        color="white"
+
         {...rest}
       />
+      <br/>
+       <br/>
+       <br/>
+
+     <div className={classNames(classes.main, classes.mainRaised)}>
+     <ProcessSection/>
       <Footer />
+    </div>
     </div>
   );
 }
