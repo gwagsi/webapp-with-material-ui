@@ -30,27 +30,48 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+      <Link to={"/home"} className={classes.link}>
       <Button href="" color="transparent" target="_blank" className={classes.navLink}>
         <HomeIcon className={classes.icons}/>HOME
       </Button>
+      </Link>
       </ListItem>
 
       <ListItem className={classes.listItem}>
-      <Link to={"/login-page"} className={classes.link}>
+      <Link to={"/how-to"} className={classes.link}>
       <Button href="" color="transparent" target="_blank" className={classes.navLink}>
         <AccessibilityIcon className={classes.icons}/>HOW TO
       </Button>
       </Link>
-
+      </ListItem>
       <ListItem className={classes.listItem}>
+      <Link to={"/start-teaching"} className={classes.link}>
       <Button href="" color="transparent" target="_blank" className={classes.navLink}>
         <SupervisorAccountIcon className={classes.icons}/>BECOME A TUTOR
         </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Button href="" color="transparent" target="_blank" className={classes.navLink}>
-        <ArrowDropDownCircleIcon className={classes.icons}/>MORE
-        </Button>
+        <CustomDropdown
+          noLiPadding
+          buttonText="MORE"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={ArrowDropDownCircleIcon}
+          dropdownList={[
+            <Link to="/" className={classes.dropdownLink}>
+              Quick Guide
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+            Price
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+             FAQ
+            </Link>,
+          ]}
+        />
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
