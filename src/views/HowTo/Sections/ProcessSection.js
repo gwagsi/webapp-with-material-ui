@@ -20,7 +20,7 @@ import Button from "components/CustomButtons/Button.js";
 
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
-import { FolderOpen } from "@material-ui/icons";
+import { FolderOpen, Phone, AccountBalance, Class } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -40,8 +40,8 @@ export default function ProcessSection() {
           <GridItem xs={12} sm={12} md={2}>
             <InfoArea
               title="1. Prepare Skype"
-              description="Register at Skype and get your own Skype Name"
-              icon={entypoSocial}
+              description="Register at Skype.com and get your own Skype Name"
+              icon={Phone}
               iconColor="info"
               vertical
             />
@@ -50,7 +50,7 @@ export default function ProcessSection() {
             <InfoArea
               title="2. Sign Up"
               description="Sign up with your email address and Skype Name"
-              icon={LanguageIcon}
+              icon={AccountBalance}
               iconColor="success"
               vertical
             />
@@ -59,7 +59,7 @@ export default function ProcessSection() {
             <InfoArea
               title="3. Choose a Plan"
               description="Choose one of our Everyday Lesson or Coin plans."
-              icon={AssessmentIcon}
+              icon={MonetizationOnIcon}
               iconColor="danger"
               vertical
             />
@@ -77,7 +77,7 @@ export default function ProcessSection() {
             <InfoArea
               title="5. Learn"
               description="Conduct learning sessions via Skype video."
-              icon={MonetizationOnIcon}
+              icon={Class}
               iconColor="danger"
               vertical
             />

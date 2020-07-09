@@ -12,6 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
@@ -32,31 +33,28 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="feyins.com"
+            <Link
                 className={classes.block}
-                target="_blank"
+                to="/home"
               >
                 Learning Pack
-              </a>
+              </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href=""
+            <Link
                 className={classes.block}
-                target="_blank"
+                to="/about"
               >
-                About us
-              </a>
+               About Us
+              </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href=""
+            <Link
                 className={classes.block}
-                target="_blank"
+                to="/blog"
               >
                 Blog
-              </a>
+              </Link>
             </ListItem>
             
           </List>
@@ -65,9 +63,9 @@ export default function Footer(props) {
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href=""
+            href="feyins.com"
             className={aClasses}
-            target="_blank"
+
           >
             FEYINs
           </a>{" "}

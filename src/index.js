@@ -28,7 +28,8 @@ ReactDOM.render(
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/how-to" component={HowTo}/>
-      <Route path="/" component={Components} />
+      <Route path="/component" component={Components} />
+      <Route path="/" component={Home}/>
 
     </Switch>
   </Router>,

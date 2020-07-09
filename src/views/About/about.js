@@ -27,16 +27,27 @@ export default function About(props) {
         brand="LEARNING PACK"
         rightLinks={<HeaderLinks />}
         fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
+        color="white"
         {...rest}
       />
-            <div className={classNames(classes.main, classes.mainRaised)}>
-                Contact
-            </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
       <Footer />
     </div>
   );
